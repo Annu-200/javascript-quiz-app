@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <img src="img/Group 4.svg" alt="quiz-icon" />
+      <div class="quiz-button">
+        <button>
+          Start Now <span>&#11166;</span><span>&#11166;</span
+          ><span>&#11166;</span>
+        </button>
+      </div>
+      <h3 class="heighest-score">Higest Score 02/25</h3>
+    </div>
+    <main>
+      <div class="quiz-main-container">
+        <header>
+          <img src="img/Group 4.svg" alt="quiz-icon" class="logo" />
+          <img
+            src="img/🦆 icon _Volume Up_.svg"
+            alt="volume-icon"
+            class="volume-icon"
+          />
+          <img
+            src="img/🦆 icon _Volume Mute_.png"
+            alt="volume-icon"
+            class="volume-icon-mute" 
+          />
+          <audio src="audio/level-up-191997.mp3" id="levelUpSound"></audio>
+          <audio src="audio/wrong-answer-126515.mp3" id="fail"></audio>
+          <div class="score">
+            <div class="display-score">02/25</div>
+          </div>
+        </header>
+        <div class="all-question-timer">
+        <div class="ques">
+          <div class="main-ques">
+            Inside which HTML element do we put the JavaScript?
+          </div>
+        </div>
+        <div class="time">
+          00:30
+        </div>
+        <div class="option-container">
+          <div class="option-display">
+            <div class="option one" data-value="a">
+              <div class="opt"><input type="text" class="first-option" /></div>
+              <div class="circle"><span class="">&#10004;</span></div>
+            </div>
+            <div class="option two" data-value="b">
+              <div class="opt"><input type="text" /></div>
+              <div class="circle"><span class="">&#10004;</span></div>
+            </div>
+            <div class="option three" data-value="c">
+              <div class="opt"><input type="text" /></div>
+              <div class="circle"><span class="">&#10004;</span></div>
+            </div>
+            <div class="option four" data-value="d">
+              <div class="opt"><input type="text" /></div>
+              <div class="circle"><span class=""></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="button">Next>></div>
+      </div>
+    </div>
+      <div class="Total-container">
+        <img src="img/Group 4.svg" alt="" />
+        <h1>Result</h1>
+
+        <div class="user-sore">
+          <div class="correct-score"><span class="right-ans">70%</span></div>
+
+          <div class="progress-bar">
+            <div class="left-point"></div>
+            <div class="progress"></div>
+            <div class="low-score"></div>
+            <div class="right-point"></div>
+          </div>
+          <div class="incorrect-score">
+            <span class="wrong-ans">20%</span>
+          </div>
+        </div>
+        <span class="total-correct-score">22/25</span>
+
+        <div class="quote">
+          “Keep learning, you have a good score!”
+      
+        </div>
+        <div class="retry-button">
+          <div class="but-try"><<< Retry</div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
